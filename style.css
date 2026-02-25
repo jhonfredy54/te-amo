@@ -1,0 +1,38 @@
+body{
+    margin:0;
+    overflow:hidden;
+    background:black;
+    font-family:'Segoe UI', sans-serif;
+}
+
+#mensaje{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    top:30px;
+    font-size:42px;
+    color:#ff4da6;
+    text-shadow:0 0 20px #ff4da6, 0 0 60px #ff1a75;
+    animation: latido 2s infinite;
+    pointer-events:none;
+}
+
+@keyframes latido{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
+.frase3d{
+    position:absolute;
+    font-size:14px;
+    color:white;
+    text-shadow:
+        0 0 5px white,
+        0 0 10px white,
+        0 0 20px #ff69b4,
+        0 0 40px #ff69b4;
+    pointer-events:none;
+    white-space:nowrap;
+    left:0;
+    top:0;
+}
